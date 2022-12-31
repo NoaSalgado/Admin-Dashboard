@@ -1,0 +1,62 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBALS*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+/* Menu */
+.menu {
+  background-color: blue;
+
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.header {
+  background-color: green;
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+}
+
+.main {
+  background-color: gray;
+  padding: 2rem;
+
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.projects {
+  background-color: yellow;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.announcements {
+  background-color: pink;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.trending {
+  background-color: aqua;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
