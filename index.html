@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -21,8 +27,8 @@
         Dashboard
       </p>
 
-      <nav class="menu__main-nav">
-        <ul>
+      <nav class="menu__main-nav grid">
+        <ul class="grid">
           <li>
             <a href="#"><i class="fa-solid fa-house"></i> Home</a>
           </li>
@@ -47,7 +53,7 @@
       </nav>
 
       <nav class="menu__secondary-nav">
-        <ul>
+        <ul class="grid">
           <li>
             <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
           </li>
@@ -63,22 +69,181 @@
       </nav>
     </div>
 
-    <header class="header"></header>
+    <header class="header grid">
+      <div class="grid">
+        <form class="header__search flex">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="search" placeholder="Search" />
+        </form>
+
+        <div class="header__user flex">
+          <img src="./img/user-avatar.png" alt="User avatar" />
+          <h1><span>Hi there,</span> Noa (@Noa)</h1>
+        </div>
+      </div>
+
+      <div class="grid">
+        <nav class="header__nav">
+          <ul class="flex">
+            <li>
+              <a href="#"><i class="fa-regular fa-bell"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions flex">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
+    </header>
 
     <main class="main">
       <section class="projects">
         <h2 class="projects__heading">Your projects</h2>
-        <div></div>
+        <div class="grid">
+          <div class="projects__project flex">
+            <h3>Calculator</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident repudiandae laboriosam, similique consectetur
+              voluptatibus consequuntur!
+            </p>
+            <div>
+              <a href="#"><i class="fa-regular fa-star"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-code-branch"></i></a>
+            </div>
+          </div>
+
+          <div class="projects__project flex">
+            <h3>Awesome App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident repudiandae laboriosam, similique consectetur
+              voluptatibus consequuntur!
+            </p>
+            <div>
+              <a href="#"><i class="fa-regular fa-star"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-code-branch"></i></a>
+            </div>
+          </div>
+
+          <div class="projects__project flex">
+            <h3>Tic tac toe</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident repudiandae laboriosam, similique consectetur
+              voluptatibus consequuntur!
+            </p>
+            <div>
+              <a href="#"><i class="fa-regular fa-star"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-code-branch"></i></a>
+            </div>
+          </div>
+
+          <div class="projects__project flex">
+            <h3>Weather App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident repudiandae laboriosam, similique consectetur
+              voluptatibus consequuntur!
+            </p>
+            <div>
+              <a href="#"><i class="fa-regular fa-star"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-code-branch"></i></a>
+            </div>
+          </div>
+
+          <div class="projects__project flex">
+            <h3>Cool App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident repudiandae laboriosam, similique consectetur
+              voluptatibus consequuntur!
+            </p>
+            <div>
+              <a href="#"><i class="fa-regular fa-star"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-code-branch"></i></a>
+            </div>
+          </div>
+
+          <div class="projects__project flex">
+            <h3>Funny Game</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident repudiandae laboriosam, similique consectetur
+              voluptatibus consequuntur!
+            </p>
+            <div>
+              <a href="#"><i class="fa-regular fa-star"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-code-branch"></i></a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="announcements">
         <h2 class="announcements__heading">Announcements</h2>
-        <div></div>
+        <div class="announcements__content">
+          <div>
+            <h4>Site Maintenance</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, explicabo.
+            </p>
+          </div>
+
+          <div>
+            <h4>Community Share Day</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              iste?
+            </p>
+          </div>
+
+          <div>
+            <h4>Updated Privacy Policy</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore, voluptate!
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="trending">
         <h2 class="trending__heading">Trending</h2>
-        <div></div>
+        <div class="trending__content flex">
+          <div class="flex">
+            <img src="./img/journal-app.png" alt="Journal app" />
+            <a href="#">Journal App</a>
+          </div>
+
+          <div class="flex">
+            <img src="./img/pet-app.png" alt="Pet app" />
+            <a href="#">Pet App</a>
+          </div>
+
+          <div class="flex">
+            <img src="./img/science-app.png" alt="Science app" />
+            <a href="#">Science App</a>
+          </div>
+
+          <div class="flex">
+            <img src="./img/travel-app.png" alt="Travel app" />
+            <a href="#">Travel App</a>
+          </div>
+        </div>
       </section>
     </main>
   </body>
